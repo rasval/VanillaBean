@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order — Vanilla Bean</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="nav-logo">Vanilla Bean</div>
+      <ul>
+        <li><a href="index.html">Our Cakes</a></li>
+        <li><a href="order.html">Place an Order</a></li>
+      </ul>
+    </nav>
+
+    <section class="order-hero">
+      <h1>Place an Order</h1>
+      <p>Fill in the details below and we'll get back to you shortly</p>
+    </section>
+
+    <section class="order-section">
+      <form id="order-form">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="event-type">Event Type</label>
+          <select id="event-type" required>
+            <option value="">Select an event</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Baby Shower">Baby Shower</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="event-date">Event Date</label>
+          <input type="date" id="event-date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="servings">Cake Size / Number of Servings</label>
+          <select id="servings" required>
+            <option value="">Select a size</option>
+            <option value="Small (6-8 servings)">Small (6–8 servings)</option>
+            <option value="Medium (10-15 servings)">Medium (10–15 servings)</option>
+            <option value="Large (20-30 servings)">Large (20–30 servings)</option>
+            <option value="Extra Large (30+ servings)">Extra Large (30+ servings)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="flavour">Flavour Preference</label>
+          <input type="text" id="flavour" placeholder="e.g. Vanilla, Chocolate, Red Velvet" required>
+        </div>
+
+        <div class="form-group">
+          <label for="design">Design Description & Special Requests</label>
+          <textarea id="design" rows="5" placeholder="Describe your dream cake — colours, theme, decorations, any special details..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Order Request</button>
+
+      </form>
+
+      <div id="thank-you" class="thank-you-msg" style="display:none;">
+        <h2>Thank you! 🎂</h2>
+        <p>Your order request has been received. We'll be in touch with you shortly on WhatsApp!</p>
+      </div>
+
+    </section>
+
+    <script src="order.js"></script>
+
+  </body>
+
+</html>
