@@ -40,7 +40,7 @@ const cakes = [
     image: "images/cake3.jpeg",
     gallery: [
       "images/cake4-b.jpeg",
-      "images/cake4.jpeg",
+      "images/cake4.jpg",
       "images/cake4-c.jpeg"
     ]
   },
@@ -77,7 +77,6 @@ cakes.forEach(function(cake) {
     <img src="${cake.image}" alt="${cake.name}">
     <div class="cake-info">
       <h3>${cake.name}</h3>
-      <p>${cake.description}</p>
     </div>
   `;
 
