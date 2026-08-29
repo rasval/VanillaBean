@@ -224,7 +224,7 @@ nav ul li a:hover {
     font-size: 1rem;
     padding: 14px 16px;
   }
-
+}
 /* ── LIGHTBOX ── */
 .lightbox {
   visibility: hidden;
@@ -346,5 +346,3 @@ nav ul li a:hover {
     height: 180px;
   }
 }
-}
-
