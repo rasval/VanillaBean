@@ -4,7 +4,7 @@ const thankYou = document.getElementById("thank-you");
 
 // Your Google Apps Script web address
 // Replace the URL below with your own deployment URL
-const scriptURL = "https://script.google.com/macros/s/AKfycbzm57UUeyb6y6DBgpHkIgqJKBltEtll2vfI8c65gWZs0-gFCYS2bvR677ZqhZzUg2fi1g/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyhpXOp_FFH8HRJ9vSSGyfbH7PI33aB_x-kw26wREhK6kmwxQCkuk6wxt4of0ywg0leTg/exec";
 
 // Listen for when the customer clicks Submit
 form.addEventListener("submit", function(e) {
