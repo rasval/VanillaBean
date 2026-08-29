@@ -29,17 +29,16 @@ form.addEventListener("submit", function(e) {
   btn.disabled = true;
 
   // Send the data to Google Apps Script
-  fetch(scriptURL, {
+fetch(scriptURL, {
     method: "POST",
-    body: JSON.stringify(orderData)
+    body: JSON.stringify(orderData),
+    mode: "no-cors"
   })
-  .then(function(response) {
-    // It worked — hide form, show thank you message
+  .then(function() {
     form.style.display = "none";
     thankYou.style.display = "block";
   })
   .catch(function(error) {
-    // Something went wrong — tell the customer
     btn.textContent = "Submit Order Request";
     btn.disabled = false;
     alert("Something went wrong. Please try again or contact us directly.");
