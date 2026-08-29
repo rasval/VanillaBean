@@ -6,7 +6,7 @@
 const cakes = [
   {
     name: "Sheepish Cake",
-    description: "Butterscotch cake with a sheep on top",
+    //description: "A nostalgic butterscotch cake",
     image: "images/cake1.jpg",
     gallery: [
       "images/cake1-b.jpeg",
@@ -14,19 +14,57 @@ const cakes = [
       "images/cake1-c.jpeg"
     ]
   },
-  {
-    name: "Coming Soon",
-    description: "More beautiful cakes being added shortly",
-    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean",
-    gallery: []
+    {
+    name: "Fly like a butterfly",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake2.jpeg",
+    gallery: [
+      "images/cake2-b.jpeg",
+      "images/cake2.jpeg",
+      "images/cake2-c.jpeg"
+    ]
   },
-  {
-    name: "Coming Soon",
-    description: "More beautiful cakes being added shortly",
-    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean",
-    gallery: []
-  }
-];
+      {
+    name: "A Fruity First",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake3.jpeg",
+    gallery: [
+      "images/cake3-b.jpeg",
+      "images/cake3.jpeg",
+      "images/cake3-c.jpeg"
+    ]
+  },
+        {
+    name: "The Floral Fanatasy",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake3.jpeg",
+    gallery: [
+      "images/cake4-b.jpeg",
+      "images/cake4.jpeg",
+      "images/cake4-c.jpeg"
+    ]
+  },
+        {
+    name: "Love you 3000",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake5.jpeg",
+    gallery: [
+      "images/cake5-b.jpeg",
+      "images/cake5.jpeg",
+      "images/cake5-c.jpeg"
+    ]
+  },
+          {
+    name: "Jungle Safari",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake6.jpeg",
+    gallery: [
+      "images/cake6-b.jpeg",
+      "images/cake6.jpeg",
+      "images/cake6-c.jpeg"
+    ]
+  },
+ ];
 
 // Build the cake grid
 const grid = document.getElementById("cake-grid");
