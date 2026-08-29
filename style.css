@@ -22,10 +22,14 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: #2D6A2D;
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 60px;
+  width: auto;
 }
 
 nav ul {
