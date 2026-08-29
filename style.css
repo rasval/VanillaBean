@@ -154,3 +154,71 @@ nav ul li a:hover {
   flex-direction: column;
   margin-bottom: 32px;
 }
+/* ── MOBILE STYLES ── */
+/* Everything inside here ONLY applies on screens smaller than 768px */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    padding: 16px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 60px 24px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Cake Grid — switch from 3 columns to 1 column */
+  .cake-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Catalogue */
+  .catalogue {
+    padding: 60px 24px;
+  }
+
+  /* Order Page */
+  .order-hero {
+    padding: 40px 24px 20px;
+  }
+
+  .order-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .order-section {
+    padding: 32px 24px 60px;
+  }
+
+  /* Make buttons full width on mobile */
+  .btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Make form inputs easier to tap */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+
+}
+
