@@ -5,26 +5,30 @@
 
 const cakes = [
   {
-    name: "Sheepish cake",
+    name: "Sheepish Cake",
     description: "Butterscotch cake with a sheep on top",
-    image: "images/cake1.jpg"
+    image: "images/cake1.jpg",
+    gallery: [
+      "images/cake1-b.jpeg",
+      "images/cake1.jpg",
+      "images/cake1-c.jpeg"
+    ]
   },
   {
     name: "Coming Soon",
     description: "More beautiful cakes being added shortly",
-    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean"
+    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean",
+    gallery: []
   },
   {
     name: "Coming Soon",
     description: "More beautiful cakes being added shortly",
-    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean"
+    image: "https://placehold.co/400x300/F5F0D0/2D6A2D?text=Vanilla+Bean",
+    gallery: []
   }
 ];
 
-
-// ── THIS PART BUILDS THE CATALOGUE AUTOMATICALLY ──
-// It reads your cakes array above and creates the HTML for each one
-
+// Build the cake grid
 const grid = document.getElementById("cake-grid");
 
 cakes.forEach(function(cake) {
@@ -39,5 +43,48 @@ cakes.forEach(function(cake) {
     </div>
   `;
 
+  // Only add click listener if cake has a gallery
+  if (cake.gallery.length > 0) {
+    card.style.cursor = "pointer";
+    card.addEventListener("click", function() {
+      openLightbox(cake);
+    });
+  }
+
   grid.appendChild(card);
 });
+
+// Build the lightbox
+function openLightbox(cake) {
+  const lightbox = document.getElementById("lightbox");
+  const title = document.getElementById("lightbox-title");
+  const description = document.getElementById("lightbox-description");
+  const mainImg = document.getElementById("lightbox-main");
+  const leftImg = document.getElementById("lightbox-left");
+  const rightImg = document.getElementById("lightbox-right");
+
+  // Fill in content
+  title.textContent = cake.name;
+  description.textContent = cake.description;
+  mainImg.src = cake.gallery[1];
+  leftImg.src = cake.gallery[0];
+  rightImg.src = cake.gallery[2];
+
+  // Show the lightbox with a smooth fade in
+  lightbox.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+// Close when clicking outside the content box
+document.getElementById("lightbox").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeLightbox();
+  }
+});
+
