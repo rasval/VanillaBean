@@ -224,10 +224,10 @@ nav ul li a:hover {
     font-size: 1rem;
     padding: 14px 16px;
   }
-  
+
 /* ── LIGHTBOX ── */
 .lightbox {
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -235,14 +235,15 @@ nav ul li a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 1000;
+  display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .lightbox.active {
-  display: flex;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -295,16 +296,18 @@ nav ul li a:hover {
 .lightbox-main-img {
   width: 50%;
   height: 340px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 2px;
+  background-color: #f0ead0;
 }
 
 .lightbox-side {
   width: 22%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 2px;
   opacity: 0.85;
+  background-color: #f0ead0;
 }
 
 .lightbox-close {
