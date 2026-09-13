@@ -9,19 +9,19 @@ const cakes = [
     //description: "A nostalgic butterscotch cake",
     image: "images/cake1.jpg",
     gallery: [
-      "images/cake1-b.jpeg",
+      "images/cake1-b.jpg",
       "images/cake1.jpg",
-      "images/cake1-c.jpeg"
+      "images/cake1-c.jpg"
     ]
   },
     {
     name: "Fly like a butterfly",
     //description: "Chocolate cake with fresh strawberries",
-    image: "images/cake2.jpeg",
+    image: "images/cake2.jpg",
     gallery: [
-      "images/cake2-b.jpeg",
-      "images/cake2.jpeg",
-      "images/cake2-c.jpeg"
+      "images/cake2-b.jpg",
+      "images/cake2.jpg",
+      "images/cake2-c.jpg"
     ]
   },
       {
@@ -39,29 +39,29 @@ const cakes = [
     //description: "Chocolate cake with fresh strawberries",
     image: "images/cake4.jpg",
     gallery: [
-      "images/cake4-b.jpeg",
+      "images/cake4-b.jpg",
       "images/cake4.jpg",
-      "images/cake4-c.jpeg"
+      "images/cake4-c.jpg"
     ]
   },
         {
     name: "Love you 3000",
     //description: "Chocolate cake with fresh strawberries",
-    image: "images/cake5.jpeg",
+    image: "images/cake5.jpg",
     gallery: [
-      "images/cake5-b.jpeg",
-      "images/cake5.jpeg",
-      "images/cake5-c.jpeg"
+      "images/cake5-b.jpg",
+      "images/cake5.jpg",
+      "images/cake5-c.jpg"
     ]
   },
           {
     name: "Jungle Safari",
     //description: "Chocolate cake with fresh strawberries",
-    image: "images/cake6.jpeg",
+    image: "images/cake6.jpg",
     gallery: [
-      "images/cake6-b.jpeg",
-      "images/cake6.jpeg",
-      "images/cake6-c.jpeg"
+      "images/cake6-b.jpg",
+      "images/cake6.jpg",
+      "images/cake6-c.jpg"
     ]
   },
  ];
