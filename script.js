@@ -27,11 +27,11 @@ const cakes = [
       {
     name: "A Fruity First",
     //description: "Chocolate cake with fresh strawberries",
-    image: "images/cake3.jpeg",
+    image: "images/cake3.jpg",
     gallery: [
-      "images/cake3-b.jpeg",
-      "images/cake3.jpeg",
-      "images/cake3-c.jpeg"
+      "images/cake3-b.jpg",
+      "images/cake3.jpg",
+      "images/cake3-c.jpg"
     ]
   },
         {
