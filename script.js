@@ -74,7 +74,7 @@ cakes.forEach(function(cake) {
   card.className = "cake-card";
 
   card.innerHTML = `
-    <img src="${cake.image}" alt="${cake.name}">
+    <img src="${cake.image}" alt="${cake.name}" loading="lazy">
     <div class="cake-info">
       <h3>${cake.name}</h3>
     </div>
@@ -125,3 +125,15 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
   }
 });
 
+function preloadGallery() {
+  cakes.forEach(function(cake) {
+    cake.gallery.forEach(function(src) {
+      const img = new Image();
+      img.src = src;
+    });
+  });
+}
+
+window.addEventListener("load", function() {
+  setTimeout(preloadGallery, 1000);
+});
