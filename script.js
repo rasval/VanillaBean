@@ -97,7 +97,7 @@ const cakes = [
     //description: "Chocolate cake with fresh strawberries",
     image: "images/cake10.jpg",
     gallery: [      
-      "images/cake10-b.jpg"
+      "images/cake10-b.jpg",
       "images/cake10.jpg",
       "images/cake10-c.jpg"
     ]
