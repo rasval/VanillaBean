@@ -64,6 +64,25 @@ const cakes = [
       "images/cake6-c.jpg"
     ]
   },
+            {
+    name: "The Carnival",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake7.jpg",
+    gallery: [
+      "images/cake7-b.jpg",
+      "images/cake7.jpg",
+      "images/cake7-c.jpg"
+    ]
+  },
+              {
+    name: "Blue Elegance",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake8.jpg",
+    gallery: [      
+      "images/cake8.jpg",
+      "images/cake8-b.jpg"
+    ]
+  },
  ];
 
 // Build the cake grid
@@ -81,12 +100,10 @@ cakes.forEach(function(cake) {
   `;
 
   // Only add click listener if cake has a gallery
-  if (cake.gallery.length > 0) {
-    card.style.cursor = "pointer";
-    card.addEventListener("click", function() {
-      openLightbox(cake);
-    });
-  }
+  card.style.cursor = "pointer";
+  card.addEventListener("click", function() {
+  openLightbox(cake);
+  });
 
   grid.appendChild(card);
 });
@@ -94,20 +111,28 @@ cakes.forEach(function(cake) {
 // Build the lightbox
 function openLightbox(cake) {
   const lightbox = document.getElementById("lightbox");
-  const title = document.getElementById("lightbox-title");
-  const description = document.getElementById("lightbox-description");
-  const mainImg = document.getElementById("lightbox-main");
-  const leftImg = document.getElementById("lightbox-left");
-  const rightImg = document.getElementById("lightbox-right");
+  const galleryBox = document.getElementById("lightbox-gallery");
 
-  // Fill in content
-  title.textContent = cake.name;
-  description.textContent = cake.description;
-  mainImg.src = cake.gallery[1];
-  leftImg.src = cake.gallery[0];
-  rightImg.src = cake.gallery[2];
+  document.getElementById("lightbox-title").textContent = cake.name;
+  document.getElementById("lightbox-description").textContent = cake.description || "";
 
-  // Show the lightbox with a smooth fade in
+  // Use the gallery if it has photos, otherwise just the tile photo
+  const photos = (cake.gallery && cake.gallery.length > 0) ? cake.gallery : [cake.image];
+
+  // The main (large) photo is the one matching the tile photo
+  let mainIndex = photos.indexOf(cake.image);
+  if (mainIndex === -1) mainIndex = 0;
+
+  // Clear old photos, then build new ones
+  galleryBox.innerHTML = "";
+  photos.forEach(function(src, i) {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = cake.name;
+    img.className = (i === mainIndex) ? "lightbox-main-img" : "lightbox-side";
+    galleryBox.appendChild(img);
+  });
+
   lightbox.classList.add("active");
   document.body.style.overflow = "hidden";
 }
@@ -127,7 +152,7 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
 
 function preloadGallery() {
   cakes.forEach(function(cake) {
-    cake.gallery.forEach(function(src) {
+    (cake.gallery || []).forEach(function(src) {
       const img = new Image();
       img.src = src;
     });
