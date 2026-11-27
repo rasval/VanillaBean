@@ -116,7 +116,6 @@ const cakes = [
     //description: "Chocolate cake with fresh strawberries",
     image: "images/cake12.jpg",
     gallery: []  
-    
   },
  ];
 
