@@ -83,6 +83,41 @@ const cakes = [
       "images/cake8-b.jpg"
     ]
   },
+                {
+    name: "Butter-y Garden",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake9.jpg",
+    gallery: [      
+      "images/cake9.jpg",
+      "images/cake9-b.jpg"
+    ]
+  },
+                {
+    name: "High in the Sky",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake10.jpg",
+    gallery: [      
+      "images/cake10-b.jpg"
+      "images/cake10.jpg",
+      "images/cake10-c.jpg"
+    ]
+  },
+                {
+    name: "Bouquet of Cravings",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake11.jpg",
+    gallery: [      
+      "images/cake11.jpg",
+      "images/cake11-b.jpg"
+    ]
+  },
+                {
+    name: "Under Sweeet Construction",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake12.jpg",
+    gallery: []  
+    
+  },
  ];
 
 // Build the cake grid
