@@ -104,7 +104,7 @@ const cakes = [
   },
                 {
     name: "Bouquet of Cravings",
-    //description: "Chocolate cake with fresh strawberries",
+    description: "Chocolate cake with fresh strawberries",
     image: "images/cake11.jpg",
     gallery: [      
       "images/cake11.jpg",
