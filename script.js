@@ -117,6 +117,66 @@ const cakes = [
     image: "images/cake12.jpg",
     gallery: []  
   },
+                  {
+    name: "Bunny-tastic",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake13.jpg",
+    gallery: [      
+      "images/cake13.jpg",
+      "images/cake13-b.jpg"
+    ]
+  },
+                  {
+    name: "Out of this world",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake14.jpg",
+    gallery: [      
+      "images/cake14.jpg",
+      "images/cake14-b.jpg"
+    ]
+  },
+                  {
+    name: "Eternal Promises",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake15.jpg",
+    gallery: [      
+      "images/cake15.jpg",
+      "images/cake15-b.jpg"
+    ]
+  },
+                  {
+    name: "Picture Perfect",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake16.jpg",
+    gallery: []  
+  },
+                  {
+    name: "Love is in the Air",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake17.jpg",
+    gallery: []  
+  },
+                  {
+    name: "Baby Driver",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake18.jpg",
+    gallery: []  
+  },
+                  {
+    name: "Forest of Dreams",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake19.jpg",
+    gallery: []  
+  },
+                    {
+    name: "Blue Paradise",
+    //description: "Chocolate cake with fresh strawberries",
+    image: "images/cake20.jpg",
+    gallery: [      
+      "images/cake20.jpg",
+      "images/cake20-b.jpg"
+    ]
+  },
  ];
 
 // Build the cake grid
