@@ -350,5 +350,9 @@ nav ul li a:hover {
   .lightbox-main-img:only-child {
     width: 100%;
   }
-  
+
+}
+/* Hide nav links (temporary test) */
+nav ul {
+  display: none;
 }
