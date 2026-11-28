@@ -104,7 +104,7 @@ const cakes = [
   },
                 {
     name: "Bouquet of Cravings",
-    description: "Chocolate cake with fresh strawberries",
+    //description: "Chocolate cake with fresh strawberries",
     image: "images/cake11.jpg",
     gallery: [      
       "images/cake11.jpg",
@@ -169,13 +169,10 @@ const cakes = [
     gallery: []  
   },
                     {
-    name: "Blue Paradise",
+    name: "Dexter's Chocolate Lab",
     //description: "Chocolate cake with fresh strawberries",
     image: "images/cake20.jpg",
-    gallery: [      
-      "images/cake20.jpg",
-      "images/cake20-b.jpg"
-    ]
+    gallery: []  
   },
  ];
 
