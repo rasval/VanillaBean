@@ -35,7 +35,7 @@ const cakes = [
     ]
   },
         {
-    name: "The Floral Fanatasy",
+    name: "The Floral Fantasy",
     //description: "Chocolate cake with fresh strawberries",
     image: "images/cake4.jpg",
     gallery: [
